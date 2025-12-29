@@ -81,9 +81,7 @@ export default function PricingBlock() {
             >
               <div className={'space-y-6'}>
                 <p>{pricingItem.type}</p>
-                <h1 className={'text-foreground text-primary font-bold'}>
-                  {pricingItem.cost}
-                </h1>
+                <h1 className={'text-primary font-bold'}>{pricingItem.cost}</h1>
                 <p className={'text-muted-foreground'}>
                   {pricingItem.description}
                 </p>
