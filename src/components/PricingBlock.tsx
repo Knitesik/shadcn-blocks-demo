@@ -2,61 +2,62 @@ import { cn } from '@/lib/utils.ts'
 import { ChevronRightIcon, TriangleIcon } from 'lucide-react'
 import { Link } from '@tanstack/react-router'
 
+const pricing = [
+  {
+    type: 'Starter',
+    cost: '$49/mo',
+    description:
+      'Perfect for individuals or small teams testing AI model comparisons.',
+    includes: {
+      title: 'Everything in Free, plus:',
+      items: [
+        'Compare up to 3 models at once',
+        'Run unlimited custom prompts',
+        'Access to basic benchmarks (MMLU, GSM8K)',
+        'Export results as CSV',
+        'Email support',
+      ],
+    },
+    contact: 'Start 14-day free trial',
+  },
+  {
+    type: 'Pro',
+    cost: '$149/mo',
+    description:
+      'Ideal for power users, researchers, and developers who need deeper insights.',
+    includes: {
+      title: 'Everything in Starter, plus:',
+      items: [
+        'Compare up to 6 models simultaneously',
+        'Side-by-side latency & speed testing',
+        'Save and organize unlimited comparisons',
+        'API access (limited rate)',
+        'Priority email & chat support',
+      ],
+    },
+    contact: 'Start 14-day free trial',
+  },
+  {
+    type: 'Enterprise',
+    cost: 'Custom',
+    description:
+      'For teams and organizations needing scale, security, and dedicated support.',
+    includes: {
+      title: 'Everything in Pro, plus:',
+      items: [
+        'Unlimited model comparisons',
+        'Custom benchmark creation',
+        'On-premise or private deployment options',
+        'SSO & advanced user management',
+        'Dedicated account manager',
+        'SLA and premium support',
+      ],
+    },
+    contact: 'Contact sales',
+  },
+]
+
 export default function PricingBlock() {
-  const pricing = [
-    {
-      type: 'Starter',
-      cost: '$49/mo',
-      description:
-        'Perfect for individuals or small teams testing AI model comparisons.',
-      includes: {
-        title: 'Everything in Free, plus:',
-        items: [
-          'Compare up to 3 models at once',
-          'Run unlimited custom prompts',
-          'Access to basic benchmarks (MMLU, GSM8K)',
-          'Export results as CSV',
-          'Email support',
-        ],
-      },
-      contact: 'Start 14-day free trial',
-    },
-    {
-      type: 'Pro',
-      cost: '$149/mo',
-      description:
-        'Ideal for power users, researchers, and developers who need deeper insights.',
-      includes: {
-        title: 'Everything in Starter, plus:',
-        items: [
-          'Compare up to 6 models simultaneously',
-          'Side-by-side latency & speed testing',
-          'Save and organize unlimited comparisons',
-          'API access (limited rate)',
-          'Priority email & chat support',
-        ],
-      },
-      contact: 'Start 14-day free trial',
-    },
-    {
-      type: 'Enterprise',
-      cost: 'Custom',
-      description:
-        'For teams and organizations needing scale, security, and dedicated support.',
-      includes: {
-        title: 'Everything in Pro, plus:',
-        items: [
-          'Unlimited model comparisons',
-          'Custom benchmark creation',
-          'On-premise or private deployment options',
-          'SSO & advanced user management',
-          'Dedicated account manager',
-          'SLA and premium support',
-        ],
-      },
-      contact: 'Contact sales',
-    },
-  ]
   return (
     <section className={'flex py-14'}>
       <div className={'container mx-auto'}>

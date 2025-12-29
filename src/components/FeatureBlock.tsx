@@ -3,38 +3,38 @@ import { cn } from '@/lib/utils.ts'
 import Placeholder from '/placeholder.svg'
 import { Badge } from '@/components/ui/badge.tsx'
 
-export default function FeatureBlock() {
-  const features = [
-    {
-      icon: SearchIcon,
-      type: 'Discovery',
-      title: 'Instant Model Discovery',
-      description:
-        'Access the latest AI models from OpenAI, Anthropic, Google, xAI, Meta, and more—all in one place. New releases and versions appear automatically as soon as they launch.',
-    },
-    {
-      icon: ZapIcon,
-      type: 'Comparison',
-      title: 'Real-Time Side-by-Side Testing',
-      description:
-        'Enter a single prompt and watch multiple models respond simultaneously. Instantly compare speed, style, accuracy, and creativity without switching tabs or apps.',
-    },
-    {
-      icon: BarChart3Icon,
-      type: 'Benchmarks',
-      title: 'Objective Performance Metrics',
-      description:
-        'Dive into standardized benchmarks like MMLU, GPQA, HumanEval, and LiveCodeBench. See clear scores, rankings, and detailed breakdowns to make informed decisions.',
-    },
-    {
-      icon: SparklesIcon,
-      type: 'Insights',
-      title: 'Deep Analysis & Context',
-      description:
-        'Get model-specific strengths, weaknesses, use-case recommendations, and cost analysis. Understand not just what performs best, but why and when to choose each model.',
-    },
-  ]
+const features = [
+  {
+    icon: SearchIcon,
+    type: 'Discovery',
+    title: 'Instant Model Discovery',
+    description:
+      'Access the latest AI models from OpenAI, Anthropic, Google, xAI, Meta, and more—all in one place. New releases and versions appear automatically as soon as they launch.',
+  },
+  {
+    icon: ZapIcon,
+    type: 'Comparison',
+    title: 'Real-Time Side-by-Side Testing',
+    description:
+      'Enter a single prompt and watch multiple models respond simultaneously. Instantly compare speed, style, accuracy, and creativity without switching tabs or apps.',
+  },
+  {
+    icon: BarChart3Icon,
+    type: 'Benchmarks',
+    title: 'Objective Performance Metrics',
+    description:
+      'Dive into standardized benchmarks like MMLU, GPQA, HumanEval, and LiveCodeBench. See clear scores, rankings, and detailed breakdowns to make informed decisions.',
+  },
+  {
+    icon: SparklesIcon,
+    type: 'Insights',
+    title: 'Deep Analysis & Context',
+    description:
+      'Get model-specific strengths, weaknesses, use-case recommendations, and cost analysis. Understand not just what performs best, but why and when to choose each model.',
+  },
+]
 
+export default function FeatureBlock() {
   return (
     <section className={'flex py-14'}>
       <div className={'container mx-auto'}>

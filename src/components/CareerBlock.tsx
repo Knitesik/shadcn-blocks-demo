@@ -43,6 +43,7 @@ const careers = [
     location: 'Remote (EU)',
   },
 ]
+
 export default function CareerBlock() {
   const [isSearchActive, setIsSearchActive] = useState(false)
   const [department, setDepartment] = useState('')

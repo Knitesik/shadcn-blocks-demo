@@ -79,6 +79,7 @@ const articles = [
       'We update model versions and add new benchmarks as soon as they become available. Leaderboards reflect the latest public releases from providers like OpenAI, Anthropic, Google, xAI, Meta, and others. Check the "Last updated" date on each benchmark page.',
   },
 ]
+
 export default function HelpBlock() {
   const [currentIndex, setCurrentIndex] = useState<number | null>(null)
 
