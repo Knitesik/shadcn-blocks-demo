@@ -30,7 +30,6 @@ export default function PricingBlock() {
         title: 'Everything in Starter, plus:',
         items: [
           'Compare up to 6 models simultaneously',
-          'Advanced benchmarks (HumanEval, GPQA, LiveCodeBench)',
           'Side-by-side latency & speed testing',
           'Save and organize unlimited comparisons',
           'API access (limited rate)',
@@ -89,9 +88,11 @@ export default function PricingBlock() {
                   {pricingItem.description}
                 </p>
               </div>
-              <div className={'flex-1 border-t'}></div>
-              <div>
-                <h5>{pricingItem.includes.title}:</h5>
+              {/*<div ></div>*/}
+              <div className={'flex-1 border-t pt-8'}>
+                <h5 className={'font-semibold'}>
+                  {pricingItem.includes.title}
+                </h5>
                 <ul className={'space-y-4 mt-4'}>
                   {pricingItem.includes.items.map((item, itemIndex) => (
                     <li key={itemIndex} className={'flex items-center gap-2'}>
